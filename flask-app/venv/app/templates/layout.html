@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Template</title>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="{{ request.script_root }}/static/core/img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="{{ request.script_root }}/static/core/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ request.script_root }}/static/admin/css/vendor/bootstrap.min.css" type='text/css'>
+		<link rel="stylesheet" href="{{ request.script_root }}/static/admin/css/vendor/font-awesome/fontawesome-fonts.css" type='text/css'>
+		<link rel="stylesheet" href="{{ request.script_root }}/static/admin/css/vendor/font-awesome/fontawesome-all.css" type='text/css'>
+		<link rel="stylesheet" href='{{ request.script_root }}/static/admin/css/vendor/font.css'>
+		<link rel="stylesheet" href="{{ request.script_root }}/static/admin/css/jumbotron.css">
+		<link rel="stylesheet" href="{{ request.script_root }}/static/admin/css/sticky-footer.css">
+		<link rel="stylesheet" href="{{ request.script_root }}/static/admin/css/base.css">
+		<script src="{{ request.script_root }}/static/admin/js/vendor/moment.min.js"></script>
+		<script src="{{ request.script_root }}/static/admin/js/vendor/moment-timezone-with-data.min.js"></script>
+		<script src="{{ request.script_root }}/static/admin/js/vendor/nunjucks.min.js"></script>
+  </head>
+  <body>
+    {% block content %}
+    <div class="jumbotron">
+    	<div class="container">
+    		<h1>Scoreboard</h1>
+    	</div>
+      <h3>[NFK] = Norfolk // [RVA] = Richmond // [VAB] = Virginia Beach</h3>
+    </div>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<table id="scoreboard" class="table table-striped" style="padding: 10px;">
+    				<thead>
+    					<tr>
+    						<td width="10px"><b>Place</b></td>
+    						<td style="text-align: center;"><b>Team</b></td>
+    						<td style="text-align: center;"><b>Score</b></td>
+    					</tr>
+    				</thead>
+    				<tbody>
+    				{% for team in teams %}
+    					<tr>
+    						<td style="text-align: center;">{{ team.pos }}</td>
+    						<td>{{ team.team }}</td>
+    						<td style="text-align: center;">{{ team.score }}</td>
+    					</tr>
+    				{% endfor %}
+    				</tbody>
+    			</table>
+    		</div>
+    	</div>
+    </div>
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>

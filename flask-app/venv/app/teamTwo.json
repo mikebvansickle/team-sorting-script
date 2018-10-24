@@ -1,0 +1,33 @@
+{
+"standings": [
+  {
+      "id": 17,
+      "pos": 109,
+      "score": 960,
+      "team": "AWESOME NAME #1"
+  },
+  {
+      "id": 13,
+      "pos": 2,
+      "score": 900,
+      "team": "WICKED COOL"
+  },
+  {
+      "id": 19,
+      "pos": 56,
+      "score": 575,
+      "team": "spice girls"
+  },
+  {
+      "id": 16,
+      "pos": 412,
+      "score": 450,
+      "team": "YES FUN"
+  },
+  {
+      "id": 10,
+      "pos": 5,
+      "score": 450,
+      "team": "LOSER TEST TEAM"
+  }]
+}

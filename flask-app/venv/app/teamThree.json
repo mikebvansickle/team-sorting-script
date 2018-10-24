@@ -1,0 +1,33 @@
+{
+"standings": [
+  {
+    "id": 17,
+    "pos": 1,
+    "score": 1000,
+    "team": "spice girls"
+  },
+  {
+    "id": 15,
+    "pos": 2,
+    "score": 850,
+    "team": "fun times ahead"
+  },
+  {
+    "id": 16,
+    "pos": 3,
+    "score": 800,
+    "team": "The cool people"
+  },
+  {
+    "id": 14,
+    "pos": 4,
+    "score": 576,
+    "team": "TEST IS FUN"
+  },
+  {
+    "id": 12,
+    "pos": 5,
+    "score": 575,
+    "team": "random team name"
+  }]
+}

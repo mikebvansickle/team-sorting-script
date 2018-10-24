@@ -1,0 +1,34 @@
+{
+  "standings": [
+    {
+      "id": 24, 
+      "pos": 1, 
+      "score": 960, 
+      "team": "Wonder Women"
+    }, 
+    {
+      "id": 25, 
+      "pos": 2, 
+      "score": 880, 
+      "team": "Robert'); DROP TABLE Students;"
+    }, 
+    {
+      "id": 27, 
+      "pos": 3, 
+      "score": 820, 
+      "team": "The Table By The Food"
+    }, 
+    {
+      "id": 26, 
+      "pos": 4, 
+      "score": 800, 
+      "team": "easkc"
+    }, 
+    {
+      "id": 23, 
+      "pos": 5, 
+      "score": 610, 
+      "team": "Wonder Women! "
+    }
+  ]
+}
